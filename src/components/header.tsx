@@ -60,7 +60,7 @@ export function Header(props: HeaderProps) {
                     <Square />
                     <Logo>Diego Oliveira</Logo>
                 </LogoContent>
-                <TagP>Developer Front-end</TagP>
+                <TagP>Front-end Developer</TagP>
             </ContainerHeader>
             <MenuIcon onMenuToggle={handleMenuToggle} />
             {isNavVisible && <CloseIcon onClose={handleMenuToggle} />}
