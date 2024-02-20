@@ -1,5 +1,5 @@
 'use client'
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 import { CloseIcon } from "./close-icon";
 
 
@@ -8,7 +8,7 @@ interface NavLinkProps {
 }
 
 
-const TagNav = styled.nav<{ isVisible?: boolean }>`
+const TagNav = styled.nav`
     width: 100vw;
     height: 100vh;
     background-color: #a9a9a9;
@@ -18,14 +18,13 @@ const TagNav = styled.nav<{ isVisible?: boolean }>`
     left: 0;
     display: flex;
     justify-content: center;
-    align-items: center;
+    padding-top: 10rem;
 `
 
 const ContainerNav = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     gap: 50px;
 `
 const TagLink = styled.a`
