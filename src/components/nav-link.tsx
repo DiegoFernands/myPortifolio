@@ -30,6 +30,9 @@ const ContainerNav = styled.div`
 `
 const TagLink = styled.a`
     font-size: 20px;
+    &:hover {
+        color: #fff;
+    }
 `
 
 export function NavLink({ onClose}: NavLinkProps){

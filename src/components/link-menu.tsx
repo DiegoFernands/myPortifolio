@@ -14,16 +14,19 @@ const TagUl = styled.ul`
     }
 `
 
-const TagLi = styled.a`
+const Link = styled.a`
     text-transform: uppercase;
     font-size: 14px;
+    &:hover {
+        border-bottom: 2px solid #000000;
+    }
 `
 export function ListMenu(props : ListMenuProps){
     const lists = ['Sobre mim', 'Currículo', 'Projetos', 'Contato'];
     return(
         <TagUl>
             {lists.map((list) => (
-                <li key={list}><TagLi href="#">{list}</TagLi></li>
+                <li key={list}><Link href="#">{list}</Link></li>
             ))}
         </TagUl>
     )
