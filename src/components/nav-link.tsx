@@ -28,6 +28,10 @@ const ContainerNav = styled.div`
     justify-content: center;
     gap: 50px;
 `
+const TagLink = styled.a`
+    font-size: 20px;
+`
+
 export function NavLink({ onClose}: NavLinkProps){
     const lists = ['Sobre mim', 'Currículo', 'Projetos', 'Contato'];
     
@@ -36,7 +40,7 @@ export function NavLink({ onClose}: NavLinkProps){
             <ContainerNav>
                 {lists.map((list) => (
                     <li key={list}>
-                        <a href="#">{list}</a>
+                        <TagLink href="#">{list}</TagLink>
                     </li>
                 ))}
             </ContainerNav>

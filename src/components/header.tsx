@@ -17,6 +17,18 @@ const TagHeader = styled.header`
     padding: 16px 20px;
     position: relative;
     z-index: 0;
+
+    @media screen and (min-width: 760px){
+        padding: 16px 70px;
+    }
+    
+    @media screen and (min-width: 1024px){
+        padding: 16px 120px;
+    }
+    
+    @media screen and (min-width: 1440px){
+        padding: 16px 220px;
+    }
 `
 
 const Logo = styled.a`
