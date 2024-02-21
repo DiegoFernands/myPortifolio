@@ -3,7 +3,7 @@ interface IconLinkedinProps {
 }
 export default function IconLinkedin(props : IconLinkedinProps){
     return(
-        <a href="">
+        <a href="https://www.linkedin.com/in/diego-oliveira-fernandes/" target="blank">
             <svg width="27px" height="27px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                 <rect x="0" fill="none" width="20" height="20"/>
                 <g>

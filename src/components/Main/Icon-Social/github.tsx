@@ -3,7 +3,7 @@ interface IconGithubProps {
 }
 export default function IconGithub(props : IconGithubProps){
     return(
-        <a href="">
+        <a href="https://github.com/DiegoFernands" target="blank">
             <svg width="30px" height="25px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
                 <title>github [#142]</title>
                 <desc>Created with Sketch.</desc>
