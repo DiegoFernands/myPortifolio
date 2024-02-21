@@ -10,7 +10,7 @@ interface NavLinkProps {
 const TagNav = styled.nav`
     width: 100vw;
     height: 100vh;
-    background-color: #a9a9a9;
+    background-color: #e1e6e3;
     position: absolute;
     z-index: 1;
     top: 0;
@@ -42,6 +42,7 @@ export default function NavLink({ onClose}: NavLinkProps){
     return (
         <TagNav>
             <ContainerNav>
+                <li><TagLink href="/">Home</TagLink></li>
                 {lists.map((list) => (
                     <li key={list}>
                         <TagLink

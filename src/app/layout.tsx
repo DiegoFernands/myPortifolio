@@ -4,7 +4,7 @@ import "./globals.css";
 import StyledComponentsRegistry from '../lib/registry'
 import { Header } from '@/components/Header/header';
 
-const poppins = Poppins({ subsets: ["latin"] , weight: ['100', '300', '400', '500', '700']});
+const poppins = Poppins({ subsets: ["latin"] , weight: ['100', '300', '400', '500','600', '700']});
 
 export const metadata: Metadata = {
   title: "Dev | Diego Oliveira",

@@ -7,7 +7,7 @@ import NavLink from "./nav-link";
 import CloseIcon from "./close-icon";
 
 interface HeaderProps {
-
+    
 }
 
 const TagHeader = styled.header`
@@ -17,9 +17,13 @@ const TagHeader = styled.header`
     padding: 16px 20px;
     position: relative;
     z-index: 0;
+    margin-bottom: 12rem;
 
+    @media screen and (min-width: 768px){
+        margin-bottom: 0;
+    }
     @media screen and (min-width: 1024px){
-        padding: 20px 70px;
+        padding: 25px 70px;
     }
     
     @media screen and (min-width: 1440px){

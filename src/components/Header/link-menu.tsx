@@ -26,6 +26,7 @@ export default function ListMenu(props : ListMenuProps){
     const lists = ['Currículo', 'Projetos', 'Contato'];
     return(
         <TagUl>
+            <li><Link href="/">Home</Link></li>
             {lists.map((list) => (
                 <li key={list}><Link href={removeAccents(list).toLowerCase()}>{list}</Link></li>
             ))}
