@@ -32,12 +32,33 @@ const Name = styled.h3`
     white-space: pre-wrap;
     
 `
+const TagPDesk = styled.p`
+    display: none;
+    @media screen and (min-width: 600px){
+        display: block;
+        font-size: 18px;
+        letter-spacing: 0.2rem;
+    }
+
+    @media screen and (min-width: 1024px){
+       margin-top: 5px;
+    }
+
+    @media screen and (min-width: 1440px){
+       margin-top: 10px;
+    }
+
+    @media screen and (min-width: 1700px){
+       margin-top: 20px;
+    }
+`
 export default function CardContent(props : CardContentProps){
     return(
         <TagDiv>
             <Img src="/diego.jpg" alt="Foto de Perfil" />
             <Name>Diego Oliveira</Name>
             <Border></Border>
+            <TagPDesk>Front-end Developer</TagPDesk>
         </TagDiv>
     )
 }

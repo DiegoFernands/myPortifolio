@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import CardButton from './../Card/card-button';
 
 interface ContentProps {
 
@@ -11,14 +12,42 @@ const ContainerContent = styled.div`
     flex-direction: column;
     gap: 20px;
     padding: 0 22px;
-    
+
     @media screen and (min-width: 412px){
         padding: 0 35px;
+    }
+
+    @media screen and (min-width: 768px){
+        top: 75px;
+        left: 374px;
+    }
+
+    @media screen and (min-width: 1024px){
+        left: 545px;
+        width: 35%;
+    }
+
+    @media screen and (min-width: 1440px){
+        width: 40%;
+        left: 745px;
+    }
+
+    @media screen and (min-width: 1700px){
+        width: 43%;
+        top: 65px;
+        left: 980px;
     }
 `
 
 const Title = styled.div`
     font-size: large;
+    @media screen and (min-width: 768px){
+        font-size: 35px;
+    }
+
+    @media screen and (min-width: 1700px){
+        font-size: 50px;
+    }
 `
 const SubTitle = styled.div`
     font-size: medium;

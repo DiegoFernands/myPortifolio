@@ -55,7 +55,7 @@ const LogoContent = styled.div`
 const Square = styled.div`
     width: 15px;
     height: 15px;
-    background-color: #0000ff;
+    background-color: #274862;
 `
 
 const TagP = styled.p`

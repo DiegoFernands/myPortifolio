@@ -1,7 +1,6 @@
 import styled from "styled-components"
 
 interface CardButtonProps {
-
 }
 
 const ContainerBtn = styled.div`
@@ -22,6 +21,10 @@ const LinkBtn = styled.a`
         background-color: #274862;
         color: #fff;
         border: none;
+    }
+
+    @media screen and (min-width: 768px){
+        display: none;
     }
 `
 
