@@ -9,7 +9,7 @@ interface MainProps {
 
 const TagMain = styled.main`
     width: 100vw;
-    height: 75vh;
+    height: 100vh;
     background-color: #274862;
 `
 
