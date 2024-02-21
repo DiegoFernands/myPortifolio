@@ -14,19 +14,19 @@ const TagMain = styled.main`
 
     @media screen and (min-width: 768px){
         height: 77vh;
-        width: 40%;
+        width: 50%;
     }
 
     @media screen and (min-width: 1024px){
-        width: 41.5%;
+        width: 48%;
     }
 
     @media screen and (min-width: 1440px){
-        width: 53%;
+        width: 54%;
     }
 
     @media screen and (min-width: 1700px){
-        width: 59%;
+        width: 65%;
     }
 `
 

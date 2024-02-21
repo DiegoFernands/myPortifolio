@@ -19,7 +19,8 @@ const ContainerContent = styled.div`
 
     @media screen and (min-width: 768px){
         top: 75px;
-        left: 374px;
+        left: 407px;
+        width: 52%;
     }
 
     @media screen and (min-width: 1024px){

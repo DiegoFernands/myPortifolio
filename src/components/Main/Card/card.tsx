@@ -35,7 +35,7 @@ const ContainerCard = styled.div`
 
     @media screen and (min-width: 768px){
         top: 100px;
-        left: 40px;
+        left: 74px;
         height: 55%;
     }
 

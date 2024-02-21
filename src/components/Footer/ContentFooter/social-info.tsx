@@ -14,6 +14,7 @@ const ContainerInfo = styled.div`
     @media screen and (min-width: 768px){
         flex-direction: row;
         gap: 3rem;
+        margin-left: 60px;
     }
 
     @media screen and (min-width: 1024px){
@@ -21,7 +22,7 @@ const ContainerInfo = styled.div`
     }
 
     @media screen and (min-width: 1440px){
-        margin-left: 290px;
+        margin-left: 400px;
     }
 
     @media screen and (min-width: 1700px){
@@ -57,6 +58,10 @@ const TagDiv = styled.div`
     @media screen and (min-width: 768px){
         gap: 20px;
     }
+
+    @media screen and (min-width: 1700px){
+        gap: 20px;
+    }
 `
 const Size = styled.div`
     font-size: small;
@@ -75,8 +80,6 @@ export default function SocialInfo(props : SocialInfoProps){
                 <Size>
                     <Bold>Telefone</Bold>
                     <p>(19)9993195389</p>
-                </Size>
-                <Size>
                     <Bold>Email</Bold>
                     <p>diego.fernandesjs@gmail.com</p>
                 </Size>
