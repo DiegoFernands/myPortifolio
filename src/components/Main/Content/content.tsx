@@ -7,7 +7,7 @@ interface ContentProps {
 
 const ContainerContent = styled.div`
     position: absolute;
-    top: 37%;
+    top: 34%;
     display: flex;
     flex-direction: column;
     gap: 20px;
