@@ -18,25 +18,33 @@ const ContainerContent = styled.div`
     }
 
     @media screen and (min-width: 768px){
-        top: 75px;
+        top: 100px;
         left: 407px;
-        width: 52%;
+        width: 47%;
     }
 
     @media screen and (min-width: 1024px){
-        left: 545px;
-        width: 35%;
+        left: 502px;
+        top: 100px;
+        width: 41%;
     }
 
     @media screen and (min-width: 1440px){
-        width: 40%;
-        left: 745px;
+        width: 30%;
+        top: 105px;
+        left: 695px;
     }
 
     @media screen and (min-width: 1700px){
-        width: 35%;
-        top: 80px;
-        left: 980px;
+        width: 26%;
+        top: 95px;
+        left: 845px;
+    }
+
+    @media screen and (min-width: 1800px){
+        top: 115px;
+        width: 20%;
+        left: 990px;
     }
 `
 

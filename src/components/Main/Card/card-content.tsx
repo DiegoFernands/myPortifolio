@@ -22,7 +22,7 @@ const Img = styled.img`
 
 const Border = styled.div`
     background-color: #274862;
-    width: 100%;
+    width: 100px;
     height: 2px;
 `
 const Name = styled.h3`
@@ -30,7 +30,10 @@ const Name = styled.h3`
     width: 53%;
     text-align: center;
     white-space: pre-wrap;
-    
+
+    @media screen and (min-width: 1024px){
+       font-size: 1.6rem;
+    }    
 `
 const TagPDesk = styled.p`
     display: none;

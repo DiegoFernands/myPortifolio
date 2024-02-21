@@ -35,22 +35,28 @@ const ContainerCard = styled.div`
 
     @media screen and (min-width: 768px){
         top: 100px;
-        left: 74px;
+        left: 70px;
         height: 55%;
     }
 
     @media screen and (min-width: 1024px){
-        left: 200px;
+        left: 165px;
     }
 
     @media screen and (min-width: 1440px){
-        left: 390px;
+        left: 360px;
     }
 
     @media screen and (min-width: 1700px){
         width: 400px;
-        height: 48vh;
-        left: 585px;
+        height: 53vh;
+        left: 450px;
+    }
+
+    @media screen and (min-width: 1800px){
+        width: 400px;
+        height: 53vh;
+        left: 590px;
     }
 `
 

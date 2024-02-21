@@ -6,27 +6,29 @@ import styled from 'styled-components';
 interface SocialInfoProps {}
 
 const ContainerInfo = styled.div`
-    padding: 20px 32px 20px;
+    padding: 15px 32px;
     display: flex;
     flex-direction: column;
     gap: 1rem;
-
+    
     @media screen and (min-width: 768px){
-        flex-direction: row;
-        gap: 3rem;
-        margin-left: 60px;
+       flex-direction: row;
+       justify-content: space-around;
     }
-
+    
     @media screen and (min-width: 1024px){
-        margin-left: 125px;
+        justify-content: space-around;
     }
-
+    
     @media screen and (min-width: 1440px){
-        margin-left: 400px;
+        padding: 13px 32px;
+        justify-content: space-around;
+        
     }
-
+    
     @media screen and (min-width: 1700px){
-        margin-left: 625px;
+        justify-content: space-around;
+        align-items: center;
     }
 `
 
@@ -60,7 +62,7 @@ const TagDiv = styled.div`
     }
 
     @media screen and (min-width: 1700px){
-        gap: 20px;
+        justify-content: space-between;
     }
 `
 const Size = styled.div`
