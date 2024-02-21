@@ -19,7 +19,7 @@ const Link = styled.a`
     text-transform: uppercase;
     font-size: 14px;
     &:hover {
-        border-bottom: 2px solid #000000;
+        border-bottom: 2px solid #274862;
     }
 `
 export default function ListMenu(props : ListMenuProps){
