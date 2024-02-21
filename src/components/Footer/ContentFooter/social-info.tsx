@@ -44,7 +44,7 @@ export default function SocialInfo(props : SocialInfoProps){
             <DivInfo>
                 <p>Política de Cookies</p>
                 <p>Política de Privacidade</p>
-                <p>© 2035 por Diego Oliveira</p>
+                <p>© 2024 por Diego Oliveira</p>
             </DivInfo>
         </ContainerInfo>
     )

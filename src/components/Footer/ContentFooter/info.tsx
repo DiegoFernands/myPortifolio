@@ -33,7 +33,7 @@ export default function Info(props : InfoProps){
             </Size>
             <Size>
                 <Bold>Email</Bold>
-                <p>diego.fernandes@gmail.com</p>
+                <p>diego.fernandesjs@gmail.com</p>
             </Size>
         </TagDiv>
     )
