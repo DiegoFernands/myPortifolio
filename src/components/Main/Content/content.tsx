@@ -56,6 +56,33 @@ const SubTitle = styled.div`
 const Text = styled.div`
     font-size: 0.9rem;
 `
+
+const ContainerLink = styled.div`
+    display: flex;
+    gap: 20px;
+`
+const Link = styled.a`
+    border: 1px solid #000;
+    height: 32px;
+    width: 130px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 1.5rem;
+    &:hover{
+        background-color: #274862;
+        color: #fff;
+        border: none;
+    }
+
+    @media screen and (max-width: 600px){
+        display: none;
+    }
+`
+
 export default function Content(props : ContentProps){
     return(
         <ContainerContent>
@@ -80,6 +107,10 @@ export default function Content(props : ContentProps){
                     Sou um ótimo lugar para você contar a sua história e compartilhar sobre você.
                 </p>
             </Text>
+            <ContainerLink>
+                <Link href="#">Currículo</Link>
+                <Link href="#">Projetos</Link>
+            </ContainerLink>
         </ContainerContent>
     )
 }
