@@ -9,7 +9,7 @@ interface NavLinkProps {
 
 const TagNav = styled.nav`
     width: 100vw;
-    height: 100vh;
+    height: 120vh;
     background-color: #e1e6e3;
     position: absolute;
     z-index: 1;
