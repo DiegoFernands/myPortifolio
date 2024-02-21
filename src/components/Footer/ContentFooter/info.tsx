@@ -8,7 +8,12 @@ const TagDiv = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 25px;
+    padding: 20px;
+
+    @media screen and (min-width: 412px){
+        padding: 30px;
+    }
+
 `
 const Size = styled.div`
     font-size: small;

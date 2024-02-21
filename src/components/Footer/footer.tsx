@@ -6,14 +6,11 @@ interface FooterProps {
 
 }
 
-const ContainerFooter = styled.div`
-
-`
 export default function Footer(props : FooterProps){
     return(
-        <ContainerFooter>
+        <div>
             <Info/>
             <SocialInfo/>
-        </ContainerFooter>
+        </div>
     )
 }
