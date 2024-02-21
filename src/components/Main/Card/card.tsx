@@ -20,7 +20,11 @@ const ContainerCard = styled.div`
     justify-content: space-around;
     flex-direction: column;
 
-    @media screen and (min-width: 415px){
+    @media screen and (max-width: 320px){
+        right: 0;
+    }
+
+    @media screen and (min-width: 400px){
         right: 9%;
     }
 
