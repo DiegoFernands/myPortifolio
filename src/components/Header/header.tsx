@@ -1,10 +1,10 @@
 'use client'
 import styled from "styled-components"
-import MenuIcon from "./menu-icon"
-import ListMenu from './link-menu';
+import MenuIcon from "./Content-Header/menu-icon"
+import ListMenu from './Content-Header/link-menu';
 import { useState } from "react";
-import NavLink from "./nav-link";
-import CloseIcon from "./close-icon";
+import NavLink from "./Content-Header/nav-link";
+import CloseIcon from "./Content-Header/close-icon";
 
 interface HeaderProps {
     

@@ -1,8 +1,19 @@
+import styled from "styled-components"
+import Info from "./ContentFooter/info"
+import SocialInfo from "./ContentFooter/social-info"
+
 interface FooterProps {
 
 }
+
+const ContainerFooter = styled.div`
+
+`
 export default function Footer(props : FooterProps){
     return(
-        <h1>Footer</h1>
+        <ContainerFooter>
+            <Info/>
+            <SocialInfo/>
+        </ContainerFooter>
     )
 }
