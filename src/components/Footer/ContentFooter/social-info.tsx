@@ -26,7 +26,7 @@ const ContainerInfo = styled.div`
     }
 
     @media screen and (min-width: 1700px){
-        margin-left: 570px;
+        margin-left: 625px;
     }
 `
 
