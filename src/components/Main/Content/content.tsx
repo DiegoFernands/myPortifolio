@@ -12,8 +12,8 @@ const ContainerContent = styled.div`
     gap: 20px;
     padding: 0 22px;
     
-    @media screen and (min-width: 425px){
-        padding: 0 40px;
+    @media screen and (min-width: 412px){
+        padding: 0 35px;
     }
 `
 
