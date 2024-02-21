@@ -8,8 +8,10 @@ interface CardContentProps {
 const TagDiv = styled.div`
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     gap: 1rem;
+    margin-top: 1.5rem;
 `
 const Img = styled.img`
     width: 150px;
@@ -19,8 +21,8 @@ const Img = styled.img`
 `
 
 const Border = styled.div`
-    background-color: #0000ff;
-    width: 100px;
+    background-color: #274862;
+    width: 100%;
     height: 2px;
 `
 const Name = styled.h3`

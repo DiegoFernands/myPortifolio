@@ -9,7 +9,7 @@ interface CardProps {
 
 const ContainerCard = styled.div`
     width: 335px;
-    height: 50vh;
+    height: 55vh;
     background-color: #e1e6e3;
     position: absolute;
     top: -190px;
