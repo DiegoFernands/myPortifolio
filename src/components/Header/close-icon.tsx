@@ -9,7 +9,7 @@ const CloseBtn =  styled.button`
     top: 25px;
     right: 20px;
 `
-export function CloseIcon(props : CloseIconProps){
+export default function CloseIcon(props : CloseIconProps){
     return(
         <CloseBtn onClick={props.onClose}>
             <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">

@@ -1,7 +1,6 @@
 'use client'
 import styled from "styled-components";
-import { CloseIcon } from "./close-icon";
-
+import CloseIcon from "./close-icon";
 
 interface NavLinkProps {
     onClose?: () => void;
@@ -34,15 +33,19 @@ const TagLink = styled.a`
     }
 `
 
-export function NavLink({ onClose}: NavLinkProps){
-    const lists = ['Sobre mim', 'Currículo', 'Projetos', 'Contato'];
-    
+export function removeAccents(str: string) {
+    return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+}
+
+export default function NavLink({ onClose}: NavLinkProps){
+    const lists = ['Currículo', 'Projetos', 'Contato'];
     return (
         <TagNav>
             <ContainerNav>
                 {lists.map((list) => (
                     <li key={list}>
-                        <TagLink href="#">{list}</TagLink>
+                        <TagLink
+                        href={`/${removeAccents(list).toLowerCase()}`}>{list}</TagLink>
                     </li>
                 ))}
             </ContainerNav>

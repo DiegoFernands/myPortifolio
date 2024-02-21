@@ -1,10 +1,10 @@
 'use client'
 import styled from "styled-components"
 import MenuIcon from "./menu-icon"
-import { ListMenu } from './link-menu';
+import ListMenu from './link-menu';
 import { useState } from "react";
-import { NavLink } from "./nav-link";
-import { CloseIcon } from "./close-icon";
+import NavLink from "./nav-link";
+import CloseIcon from "./close-icon";
 
 interface HeaderProps {
 
@@ -18,16 +18,12 @@ const TagHeader = styled.header`
     position: relative;
     z-index: 0;
 
-    @media screen and (min-width: 760px){
-        padding: 16px 70px;
-    }
-    
     @media screen and (min-width: 1024px){
-        padding: 16px 120px;
+        padding: 20px 70px;
     }
     
     @media screen and (min-width: 1440px){
-        padding: 16px 220px;
+        padding: 30px 220px;
     }
 `
 
@@ -41,6 +37,10 @@ const ContainerHeader = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    @media screen and (min-width: 769px){
+        flex-direction: row;
+        gap: 1rem;
+    }
 `
 const LogoContent = styled.div`
     display: flex;
@@ -70,7 +70,7 @@ export function Header(props: HeaderProps) {
             <ContainerHeader>
                 <LogoContent>
                     <Square />
-                    <Logo>Diego Oliveira</Logo>
+                    <Logo href="/">Diego Oliveira</Logo>
                 </LogoContent>
                 <TagP>Front-end Developer</TagP>
             </ContainerHeader>

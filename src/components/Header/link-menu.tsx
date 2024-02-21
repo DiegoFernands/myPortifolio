@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import { removeAccents } from './nav-link';
 
 interface ListMenuProps {
 
@@ -21,12 +22,12 @@ const Link = styled.a`
         border-bottom: 2px solid #000000;
     }
 `
-export function ListMenu(props : ListMenuProps){
-    const lists = ['Sobre mim', 'Currículo', 'Projetos', 'Contato'];
+export default function ListMenu(props : ListMenuProps){
+    const lists = ['Currículo', 'Projetos', 'Contato'];
     return(
         <TagUl>
             {lists.map((list) => (
-                <li key={list}><Link href="#">{list}</Link></li>
+                <li key={list}><Link href={removeAccents(list).toLowerCase()}>{list}</Link></li>
             ))}
         </TagUl>
     )
