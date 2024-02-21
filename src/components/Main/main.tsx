@@ -26,7 +26,7 @@ const TagMain = styled.main`
     }
 
     @media screen and (min-width: 1700px){
-        width: 65%;
+        width: 62%;
     }
 `
 
