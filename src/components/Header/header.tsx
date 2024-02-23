@@ -19,6 +19,8 @@ const TagHeader = styled.header`
     position: relative;
     z-index: 1;
     @media screen and (min-width: 768px){
+        position: fixed;
+        width: 100%;
         justify-content: space-around;
         padding: 32px;
     }

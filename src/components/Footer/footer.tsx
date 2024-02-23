@@ -13,16 +13,19 @@ const ContainerFooter = styled.footer`
     width: 100%;
     position: relative;
     z-index: 0;
-    `
+    @media screen and (min-width: 768px){
+       padding-bottom: 100px;
+    }
+`
 const ContentFooter = styled.div`
     padding: 1em 0 1em;
     width: 90%;
-
+    
     @media screen and (min-width: 768px){
         display: flex;
-       flex-direction: row;
-       justify-content: space-around;
-       align-items: center;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
     }
 `
 

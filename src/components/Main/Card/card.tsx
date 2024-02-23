@@ -21,9 +21,9 @@ const ContainerCard = styled.div`
 
     @media screen and (min-width: 768px){
         width: 40%;
-        top: 150px;
+        top: 30%;
         left: 80%;
-        height: 48%;
+        height: 42%;
     }
     
     @media screen and (min-width: 1024px){
@@ -40,6 +40,7 @@ const ContainerCard = styled.div`
     @media screen and (min-width: 1700px){
         width: 20%;
         left: 87%;
+        height: 53%;
     }
 `
 
