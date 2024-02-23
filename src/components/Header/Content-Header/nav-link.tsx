@@ -9,7 +9,7 @@ interface NavLinkProps {
 
 const TagNav = styled.nav`
     width: 100vw;
-    height: 122vh;
+    height: 140vh;
     display: flex;
     justify-content: center;
     background-color: #e1e6e3;
