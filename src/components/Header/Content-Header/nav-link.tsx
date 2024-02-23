@@ -28,9 +28,10 @@ const ContainerNav = styled.div`
     gap: 50px;
 `
 const TagLink = styled.a`
-    font-size: 20px;
+    font-size: 1.4em;
     color: #274862;
-    font-weight: 600;
+    font-weight: 700;
+    text-transform: uppercase;
     &:hover {
         color: #fff;
     }

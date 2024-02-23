@@ -18,6 +18,29 @@ const ContainerCard = styled.div`
     top: -197px;
     z-index: 0;
     gap: 1em;
+
+    @media screen and (min-width: 768px){
+        width: 40%;
+        top: 150px;
+        left: 80%;
+        height: 48%;
+    }
+    
+    @media screen and (min-width: 1024px){
+        width: 35%;
+        left: 82.5%;
+    }
+    
+    @media screen and (min-width: 1440px){
+        height: 61%;
+        width: 30%;
+        left: 85%;
+    }
+
+    @media screen and (min-width: 1700px){
+        width: 20%;
+        left: 87%;
+    }
 `
 
 export default function Card(props : CardProps){

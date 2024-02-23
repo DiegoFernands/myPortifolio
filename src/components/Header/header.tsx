@@ -18,11 +18,19 @@ const TagHeader = styled.header`
     padding: 14px 20px;
     position: relative;
     z-index: 1;
+    @media screen and (min-width: 768px){
+        justify-content: space-around;
+        padding: 32px;
+    }
 `
 
 const Logo = styled.a`
     font-size: 20px;
     font-weight: 500;
+    @media screen and (min-width: 1024px){
+        font-size: 1.6em;
+        font-weight: 600;
+    }
 `
 
 const ContainerHeader = styled.div`

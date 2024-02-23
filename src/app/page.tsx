@@ -13,6 +13,17 @@ const TagMain = styled.div`
   height: 750px;
   top: 200px;
   width: 100%;
+
+  @media screen and (min-width: 768px){
+    flex-direction: row;
+    top: 0;
+    right: 70%;
+    height: 800px;
+  }
+
+  @media screen and (min-width: 1024px){
+    right: 60%;
+  }
 `
 
 export default function Home(){

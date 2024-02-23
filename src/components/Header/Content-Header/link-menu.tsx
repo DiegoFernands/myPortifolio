@@ -21,12 +21,19 @@ const Link = styled.a`
     &:hover {
         border-bottom: 2px solid #274862;
     }
+    `
+
+const LinkMain = styled.a`
+    color: #274862;
+    font-weight: 600;
+    border-bottom: 2px solid #274862;
 `
+
 export default function ListMenu(props : ListMenuProps){
     const lists = ['Currículo', 'Projetos', 'Contato'];
     return(
         <TagUl>
-            <li><Link href="/">Home</Link></li>
+            <li><LinkMain href="/">Home</LinkMain></li>
             {lists.map((list) => (
                 <li key={list}><Link href={removeAccents(list).toLowerCase()}>{list}</Link></li>
             ))}

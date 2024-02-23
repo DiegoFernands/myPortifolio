@@ -9,16 +9,49 @@ const ContainerContent = styled.div`
     display: flex;
     flex-direction: column;
     gap: 20px;
+
+    @media screen and (min-width: 768px){
+        position: relative;
+        left: 93%;
+        width: 40%;
+        top: -8%;
+    }
+    
+    @media screen and (min-width: 1024px){
+        width: 30%;
+        left: 85%;
+    }
+    
+    @media screen and (min-width: 1440px){
+        top: -4%;
+        left: 82%;
+    }
+    @media screen and (min-width: 1700px){
+        width: 20%;
+        left: 68%;
+    }
 `
 
 const Title = styled.div`
     font-size: large;
+
+    @media screen and (min-width: 1440px){
+        font-size: 2rem;
+    }
 `
 const SubTitle = styled.div`
     font-size: medium;
+
+    @media screen and (min-width: 1440px){
+        font-size: 1.2rem;
+    }
 `
 const Text = styled.div`
     font-size: 0.9rem;
+
+    @media screen and (min-width: 1440px){
+        font-size: 1rem;
+    }
 `
 
 const ContainerLink = styled.div`

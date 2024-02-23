@@ -13,10 +13,17 @@ const ContainerFooter = styled.footer`
     width: 100%;
     position: relative;
     z-index: 0;
-`
+    `
 const ContentFooter = styled.div`
     padding: 1em 0 1em;
     width: 90%;
+
+    @media screen and (min-width: 768px){
+        display: flex;
+       flex-direction: row;
+       justify-content: space-around;
+       align-items: center;
+    }
 `
 
 const DivSocial = styled.div`
@@ -45,6 +52,10 @@ const TagDiv = styled.div`
     align-items: center;
     justify-content: space-between;
     padding-bottom: 1em;
+    @media screen and (min-width: 768px){
+        align-items: start;
+        flex-direction: column;
+    }
 `
 const Size = styled.div`
     font-size: small;
