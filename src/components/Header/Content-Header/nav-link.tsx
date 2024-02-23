@@ -9,15 +9,16 @@ interface NavLinkProps {
 
 const TagNav = styled.nav`
     width: 100vw;
-    height: 145vh;
+    height: 122vh;
+    display: flex;
+    justify-content: center;
     background-color: #e1e6e3;
     position: absolute;
     z-index: 1;
     top: 0;
     left: 0;
-    display: flex;
-    justify-content: center;
-    padding-top: 10rem;
+    padding-top: 12rem;
+    overflow: hidden;
 `
 
 const ContainerNav = styled.div`
@@ -28,6 +29,8 @@ const ContainerNav = styled.div`
 `
 const TagLink = styled.a`
     font-size: 20px;
+    color: #274862;
+    font-weight: 600;
     &:hover {
         color: #fff;
     }

@@ -1,62 +1,18 @@
 import styled from "styled-components"
-import CardButton from './../Card/card-button';
 
 interface ContentProps {
 
 }
 
 const ContainerContent = styled.div`
-    position: absolute;
-    top: 33%;
+    width: 90%;
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding: 0 22px;
-
-    @media screen and (min-width: 412px){
-        padding: 0 35px;
-    }
-
-    @media screen and (min-width: 768px){
-        top: 100px;
-        left: 407px;
-        width: 47%;
-    }
-
-    @media screen and (min-width: 1024px){
-        left: 502px;
-        top: 100px;
-        width: 41%;
-    }
-
-    @media screen and (min-width: 1440px){
-        width: 30%;
-        top: 105px;
-        left: 695px;
-    }
-
-    @media screen and (min-width: 1700px){
-        width: 26%;
-        top: 95px;
-        left: 845px;
-    }
-
-    @media screen and (min-width: 1800px){
-        top: 115px;
-        width: 20%;
-        left: 990px;
-    }
 `
 
 const Title = styled.div`
     font-size: large;
-    @media screen and (min-width: 768px){
-        font-size: 35px;
-    }
-
-    @media screen and (min-width: 1700px){
-        font-size: 50px;
-    }
 `
 const SubTitle = styled.div`
     font-size: medium;

@@ -11,24 +11,13 @@ interface HeaderProps {
 }
 
 const TagHeader = styled.header`
+    background-color: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 16px 20px;
+    padding: 14px 20px;
     position: relative;
-    z-index: 0;
-    margin-bottom: 12rem;
-
-    @media screen and (min-width: 768px){
-        margin-bottom: 0;
-    }
-    @media screen and (min-width: 1024px){
-        padding: 25px 70px;
-    }
-    
-    @media screen and (min-width: 1440px){
-        padding: 30px 220px;
-    }
+    z-index: 1;
 `
 
 const Logo = styled.a`

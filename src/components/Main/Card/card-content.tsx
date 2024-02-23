@@ -1,5 +1,5 @@
-import Image from 'next/image';
 import styled from "styled-components"
+import CardButton from './card-button';
 
 interface CardContentProps {
 
@@ -11,11 +11,11 @@ const TagDiv = styled.div`
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    margin-top: 1.5rem;
+    padding-top: 1em;
 `
 const Img = styled.img`
-    width: 150px;
-    height: 150px;
+    width: 10em;
+    height: 10em;
     border-radius: 50%;
     object-fit: cover;
 `
@@ -30,29 +30,13 @@ const Name = styled.h3`
     width: 53%;
     text-align: center;
     white-space: pre-wrap;
-
-    @media screen and (min-width: 1024px){
-       font-size: 1.6rem;
-    }    
 `
 const TagPDesk = styled.p`
     display: none;
-    @media screen and (min-width: 600px){
+    letter-spacing: 0.2em;
+
+    @media screen and (min-width: 768px){
         display: block;
-        font-size: 18px;
-        letter-spacing: 0.2rem;
-    }
-
-    @media screen and (min-width: 1024px){
-       margin-top: 5px;
-    }
-
-    @media screen and (min-width: 1440px){
-       margin-top: 10px;
-    }
-
-    @media screen and (min-width: 1700px){
-       margin-top: 20px;
     }
 `
 export default function CardContent(props : CardContentProps){
@@ -62,6 +46,7 @@ export default function CardContent(props : CardContentProps){
             <Name>Diego Oliveira</Name>
             <Border></Border>
             <TagPDesk>Front-end Developer</TagPDesk>
+            <CardButton/>
         </TagDiv>
     )
 }

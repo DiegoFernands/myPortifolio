@@ -6,15 +6,17 @@ interface CardButtonProps {
 const ContainerBtn = styled.div`
     display: flex;
     gap: 20px;
+    width: 100%;
+    padding-top: 10px;
 `
 const LinkBtn = styled.a`
-    border: 1px solid #000;
-    height: 32px;
-    width: 130px;
-    border-radius: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 1px solid #000;
+    width: 8em;
+    height: 2em;
+    border-radius: 20px;
     text-transform: uppercase;
     font-weight: 600;
     &:hover{
