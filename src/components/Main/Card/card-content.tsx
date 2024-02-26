@@ -54,7 +54,7 @@ const TagPDesk = styled.p`
         display: block;
     }
     @media screen and (min-width: 1440px){
-        font-size: 1.2em;
+        font-size: 1em;
     }
 `
 export default function CardContent(props : CardContentProps){

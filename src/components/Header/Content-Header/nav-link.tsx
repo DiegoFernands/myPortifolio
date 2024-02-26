@@ -8,20 +8,19 @@ interface NavLinkProps {
 
 
 const TagNav = styled.nav`
-    width: 100vw;
-    height: 140vh;
     display: flex;
     justify-content: center;
     background-color: #e1e6e3;
-    position: absolute;
+    position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
     padding-top: 12rem;
-    overflow: hidden;
+    width: 100%;
 `
 
 const ContainerNav = styled.div`
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
