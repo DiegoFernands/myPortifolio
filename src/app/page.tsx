@@ -13,7 +13,6 @@ const TagMain = styled.div`
   height: 750px;
   top: 200px;
   width: 100%;
-
   @media screen and (min-width: 768px){
     flex-direction: row;
     top: 0;

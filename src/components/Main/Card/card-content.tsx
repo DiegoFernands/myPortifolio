@@ -15,7 +15,7 @@ const TagDiv = styled.div`
     @media screen and (min-width: 768px){
         width: 100%;
     }
-    `
+`
 const Img = styled.img`
     width: 10em;
     height: 10em;
@@ -47,7 +47,7 @@ const Name = styled.h3`
 const TagPDesk = styled.p`
     display: none;
     letter-spacing: 0.2em;
-
+    text-transform: uppercase;
     display: none;
     
     @media screen and (min-width: 768px){

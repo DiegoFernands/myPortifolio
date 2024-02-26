@@ -81,6 +81,17 @@ const Link = styled.a`
     }
 `
 
+const LinkActive = styled(Link)`
+    border: none;
+    background-color: #274862;
+    color: #fff;
+    &:hover {
+        background-color: transparent;
+        color: #000;
+        border: 2px solid #274862;
+    }
+`
+
 export default function Content(props : ContentProps){
     return(
         <ContainerContent>
@@ -106,7 +117,7 @@ export default function Content(props : ContentProps){
                 </p>
             </Text>
             <ContainerLink>
-                <Link href="#">Currículo</Link>
+                <LinkActive href="#">Currículo</LinkActive>
                 <Link href="#">Projetos</Link>
             </ContainerLink>
         </ContainerContent>

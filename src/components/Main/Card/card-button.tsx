@@ -5,9 +5,8 @@ interface CardButtonProps {
 
 const ContainerBtn = styled.div`
     display: flex;
-    gap: 20px;
+    gap: 1rem;
     width: 100%;
-    padding-top: 10px;
 `
 const LinkBtn = styled.a`
     display: flex;
@@ -29,12 +28,17 @@ const LinkBtn = styled.a`
         display: none;
     }
 `
+const LinkActive = styled(LinkBtn)`
+    border: none;
+    background-color: #274862;
+    color: #fff;
+`
 
 export default function CardButton(props : CardButtonProps){
     return(
         <ContainerBtn>
-            <LinkBtn href="#">Currículo</LinkBtn>
-            <LinkBtn href="#">Projetos</LinkBtn>
+            <LinkActive href="/curriculo">Currículo</LinkActive>
+            <LinkBtn href="/projetos">Projetos</LinkBtn>
         </ContainerBtn>
     )
 }

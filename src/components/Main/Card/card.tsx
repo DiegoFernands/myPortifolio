@@ -13,7 +13,7 @@ const ContainerCard = styled.div`
     background-color: #e1e6e3;
     box-shadow: -6px 4px 10px rgba(0, 0, 0, 0.3);
     width: 90%;
-    height: 54%;
+    height: 52.5%;
     position: absolute;
     top: -197px;
     z-index: 0;
@@ -23,7 +23,7 @@ const ContainerCard = styled.div`
         width: 40%;
         top: 30%;
         left: 80%;
-        height: 42%;
+        height: 41%;
     }
     
     @media screen and (min-width: 1024px){
@@ -32,7 +32,7 @@ const ContainerCard = styled.div`
     }
     
     @media screen and (min-width: 1440px){
-        height: 53%;
+        height: 52%;
         width: 30%;
         left: 85%;
     }
@@ -40,7 +40,7 @@ const ContainerCard = styled.div`
     @media screen and (min-width: 1700px){
         width: 20%;
         left: 87%;
-        height: 53%;
+        height: 52%;
     }
 `
 
