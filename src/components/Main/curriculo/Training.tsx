@@ -9,12 +9,16 @@ const Container = styled.div`
 const ContainerContent = styled.div`
     width: 90%;
     background-color: #fff;
+    @media screen and (min-width: 1024px){
+        width: 50%;
+    }
 `
 const Content =  styled.div`
     display: flex;
     flex-direction: column;
     gap: 1rem;
     padding: 1rem;
+    box-shadow: -6px 4px 10px rgba(0, 0, 0, 0.3);
 `
 
 const Emphasis = styled.p`

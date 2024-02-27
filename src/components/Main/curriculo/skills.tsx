@@ -2,22 +2,27 @@ import styled from "styled-components"
 
 const ContainerSkill = styled.div`
     display: flex;
-    width: 90%;
-    background-color: #fff;
+    align-items: center;
+    justify-content: center;
     margin-top: 1rem;
-`
+    `
 
 const SkillContent = styled.div`
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    background-color: #fff;
     padding: 1rem;
+    width: 90%;
+    box-shadow: -6px 4px 10px rgba(0, 0, 0, 0.3);
+    @media screen and (min-width: 1024px){
+        width: 50%;
+    }
 `
 
 const TagDiv = styled.div` 
     display: flex;
     flex-direction: column;
-
 `
 
 const Square = styled.div`

@@ -9,6 +9,10 @@ const Container = styled.div`
 const ContainerContent = styled.div`
     width: 90%;
     background-color: #fff;
+    box-shadow: -6px 4px 10px rgba(0, 0, 0, 0.3);
+    @media screen and (min-width: 1024px){
+        width: 50%;
+    }
 `
 const Content =  styled.div`
     display: flex;

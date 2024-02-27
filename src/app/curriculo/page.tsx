@@ -10,21 +10,20 @@ interface CurriculoProps {
 }
 
 const Div = styled.div`
-    height: 100%;
-    width: 100%;
     background-color: #e1e6e3;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
     padding-bottom: 1rem;
     @media screen and (min-width: 768px){
-        position: relative;
+        padding-top: 110px;
     }
 `
-const Square = styled.div`
-    width: 20px;
-    height: 20px;
-    background-color: #274862;
+
+const Container = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 `
 
 const TagDiv = styled.div`
@@ -35,27 +34,50 @@ const TagDiv = styled.div`
     padding: 2rem;
 `
 
+const Square = styled.div`
+    width: 20px;
+    height: 20px;
+    background-color: #274862;
+`
+
+
 const ContentLink = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-bottom: 2rem;
-`
-
-const Container = styled.div`
     width: 90%;
+    @media screen and (min-width: 1024px){
+        width: 50%;
+    }
 `
 
 const LinkActive = styled(LinkBtn)`
     border: none;
+    text-align: center;
     background-color: #274862;
     color: #fff;
-`
-const Midle =  styled.div`
+    @media screen and (min-width: 768px){
+        display: block;
+        padding-top: 0.2em;
+    }
+    `
+
+const Middle =  styled.div`
     display: flex;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 2rem 0 2rem ;
+    `
+
+const TitleMiddle = styled.div`
     width: 90%;
-    padding: 2rem 0 2rem 0;
+    @media screen and (min-width: 1024px){
+        width: 50%;
+    }
 `
+
 
 export default function Curriculo(props : CurriculoProps){
     return(
@@ -71,9 +93,11 @@ export default function Curriculo(props : CurriculoProps){
                 </ContentLink>
             </Container>
             <Experience/>
-            <Midle>
-                <h3>Formação</h3>
-            </Midle>
+            <Middle>
+                <TitleMiddle>
+                    <h3>Formação</h3>
+                </TitleMiddle>
+            </Middle>
             <Training/>
             <Skills/>
         </Div>

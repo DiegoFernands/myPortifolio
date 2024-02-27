@@ -3,7 +3,7 @@ import styled from "styled-components"
 
 const TagFooter = styled.footer`
     width: 100%;
-    height: 100px;
+    height: 70px;
     background-color: #e1e6e3;
     position: fixed;
     bottom: 0;
