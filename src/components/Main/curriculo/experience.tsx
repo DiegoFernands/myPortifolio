@@ -65,7 +65,6 @@ export default function Experience(){
                     <p>Sou um ótimo lugar para você contar a sua história e compartilhar sobre você.</p>
                 </Content>
             </ContainerContent>
-             
         </Container>
        
     )
