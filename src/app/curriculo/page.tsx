@@ -1,8 +1,8 @@
 'use client'
 import { LinkBtn } from "@/components/Main/Card/card-button"
-import Training from "@/components/Main/curriculo/Training"
-import Experience from "@/components/Main/curriculo/experience"
-import Skills from "@/components/Main/curriculo/skills"
+import Training from "@/components/Main/Curriculo/Training"
+import Experience from "@/components/Main/Curriculo/experience"
+import Skills from "@/components/Main/Curriculo/skills"
 import styled from "styled-components"
 
 interface CurriculoProps {
