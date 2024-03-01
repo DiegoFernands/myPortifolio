@@ -20,3 +20,4 @@ export default function CloseIcon(props : CloseIconProps){
         </CloseBtn>
     )
 }
+// test
