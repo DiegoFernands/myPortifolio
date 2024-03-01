@@ -39,6 +39,13 @@ const TagLink = styled.a`
 export function removeAccents(str: string) {
     return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
 }
+export function backHome(list: string) {
+    if(list === 'Home') {
+        list = ''
+    }
+    return removeAccents(list).toLowerCase();
+}
+
 
 export default function NavLink({ onClose}: NavLinkProps){
     const lists = ['Currículo', 'Projetos', 'Contato'];
@@ -49,7 +56,7 @@ export default function NavLink({ onClose}: NavLinkProps){
                 {lists.map((list) => (
                     <li key={list}>
                         <TagLink
-                        href={`/${removeAccents(list).toLowerCase()}`}>{list}</TagLink>
+                        href={`/${backHome(list)}`}>{list}</TagLink>
                     </li>
                 ))}
             </ContainerNav>
