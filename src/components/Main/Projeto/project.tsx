@@ -10,7 +10,10 @@ const Container = styled.div`
     flex-direction: column;
     justify-content: center;
     padding-top: 1rem;
-`
+    @media screen and (min-width: 768px){
+        padding-top: 110px;
+    }
+    `
 
 const Content = styled.div`
     display: flex;
@@ -22,6 +25,9 @@ const Content = styled.div`
     p {
         font-size: 0.9rem;
         line-height: 1.5;
+    }
+    @media screen and (min-width: 768px){
+        width: 50%;
     }
 `
 const ContentTitle = styled.div`

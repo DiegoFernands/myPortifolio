@@ -117,8 +117,8 @@ export default function Content(props : ContentProps){
                 </p>
             </Text>
             <ContainerLink>
-                <LinkActive href="#">Currículo</LinkActive>
-                <Link href="#">Projetos</Link>
+                <LinkActive href="/curriculo">Currículo</LinkActive>
+                <Link href="/projetos">Projetos</Link>
             </ContainerLink>
         </ContainerContent>
     )
