@@ -1,11 +1,15 @@
 'use client'
 import styled from "styled-components";
 import CloseIcon from "./close-icon";
+import { useEffect, useState } from "react";
 
 interface NavLinkProps {
     onClose?: () => void;
 }
 
+interface LinkProps {
+    selected: boolean;
+}
 
 const TagNav = styled.nav`
     display: flex;
@@ -26,14 +30,11 @@ const ContainerNav = styled.div`
     align-items: center;
     gap: 50px;
 `
-const TagLink = styled.a`
+const TagLink = styled.a<LinkProps>`
     font-size: 1.4em;
-    color: #274862;
+    color: ${(props) => (props.selected ? "#274862" : "#0505059d")};
     font-weight: 700;
     text-transform: uppercase;
-    &:hover {
-        color: #fff;
-    }
 `
 
 export function removeAccents(str: string) {
@@ -48,14 +49,25 @@ export function backHome(list: string) {
 
 
 export default function NavLink({ onClose}: NavLinkProps){
-    const lists = ['Currículo', 'Projetos', 'Contato'];
+    const [selectedLink, setSelectedLink] = useState("");
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    const lists = ['Home', 'Currículo', 'Projetos', 'Contato'];
+    useEffect(() => {
+        const pathname = window.location.pathname;
+        const currentLink = lists.find(
+          (list) => `/${backHome(list)}` === pathname
+        );
+        if (currentLink) {
+          setSelectedLink(currentLink);
+        }
+      }, [lists]);
     return (
         <TagNav>
             <ContainerNav>
-                <li><TagLink href="/">Home</TagLink></li>
                 {lists.map((list) => (
                     <li key={list}>
                         <TagLink
+                        selected={list === selectedLink}
                         href={`/${backHome(list)}`}>{list}</TagLink>
                     </li>
                 ))}
