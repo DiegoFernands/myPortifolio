@@ -33,6 +33,7 @@ const ContainerNav = styled.div`
 const TagLink = styled.a<LinkProps>`
     font-size: 1.4em;
     color: ${(props) => (props.selected ? "#274862" : "#0505059d")};
+    border-bottom: ${(props) => (props.selected ? "2px solid #274862" : "none")};
     font-weight: 700;
     text-transform: uppercase;
 `

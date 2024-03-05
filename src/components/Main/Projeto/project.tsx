@@ -4,6 +4,7 @@ import ProjectCard from "./projectCard"
 interface ProjectProps {
 
 }
+
 const Container = styled.div`
     display: flex;
     align-items: center;
@@ -22,6 +23,15 @@ const Content = styled.div`
     p {
         font-size: 0.9rem;
         line-height: 1.5;
+    }
+    @media screen and (min-width: 768px){
+        width: 50%;
+        padding-top: 6rem;
+    }
+
+    @media screen and (min-width: 1024px){
+        width: 35%;
+        padding-top: 6rem;
     }
 `
 const ContentTitle = styled.div`
