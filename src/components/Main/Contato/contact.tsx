@@ -7,6 +7,7 @@ const Container = styled.div`
     background-color: #fff;
     width: 90%;
     margin-bottom: 2rem;
+    box-shadow: -6px 4px 10px rgba(0, 0, 0, 0.3);
 `
 
 const Form = styled.div`
