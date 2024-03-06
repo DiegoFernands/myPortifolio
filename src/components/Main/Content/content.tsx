@@ -8,13 +8,14 @@ const ContainerContent = styled.div`
     width: 90%;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    justify-content: center;
+    gap: 10px;
 
     @media screen and (min-width: 768px){
         position: relative;
         left: 93%;
         width: 40%;
-        top: 0%;
+        top: -1%;
     }
     
     @media screen and (min-width: 1024px){
@@ -35,6 +36,10 @@ const ContainerContent = styled.div`
 
 const Title = styled.div`
     font-size: large;
+
+    @media screen and (min-width: 768px){
+        font-size: 2rem;
+    }
 
     @media screen and (min-width: 1440px){
         font-size: 2rem;
@@ -57,6 +62,8 @@ const Text = styled.div`
 
 const ContainerLink = styled.div`
     display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 20px;
 `
 const Link = styled.a`
@@ -69,7 +76,7 @@ const Link = styled.a`
     justify-content: center;
     text-transform: uppercase;
     font-weight: 600;
-    margin-top: 1.5rem;
+    /* margin-top: 1.5rem; */
     &:hover{
         background-color: #274862;
         color: #fff;
@@ -100,20 +107,20 @@ export default function Content(props : ContentProps){
             </Title>
 
             <SubTitle>
-                <h3>Meu perfil e meus projetos</h3>
+                <h3>Esse é meu portifólio e projetos</h3>
             </SubTitle>
 
             <Text>
-                <p>Sou um parágrafo. Aqui você pode adicionar seu texto. 
-                    É fácil, basta clicar ou 
-                    clicar duas vezes sobre mim para editar o conteúdo, 
-                    a fonte e mais.
+                <p>
+                    Sou um estudante de Análise e Desenvolvimeto de Sistemas,
+                    onde me encontrei na programação e adiquirindo habilidades em tecnologias.
+                    Além disso, explorei frameworks poderosos como Angular, React e Next.
                 </p>
             </Text>
 
             <Text>
                 <p>
-                    Sou um ótimo lugar para você contar a sua história e compartilhar sobre você.
+                    Agora, quero compartilhar meu conhecimento e projetos através do meu portfólio.
                 </p>
             </Text>
             <ContainerLink>

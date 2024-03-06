@@ -77,7 +77,7 @@ export default function Footer(){
                 <TagDiv>
                     <Size>
                         <Bold>Telefone</Bold>
-                        <p>(19)9993195389</p>
+                        <p>(19) 993195389</p>
                     </Size>
                     <Size>
                         <Bold>Email</Bold>
