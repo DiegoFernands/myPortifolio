@@ -11,6 +11,9 @@ const Container =  styled.div`
     flex-direction: column;
     align-items: center;
     background-color: #e1e6e3;
+    @media screen and (min-width: 768px){
+        height: 100vh;
+    }
 `
 const Title = styled.div`
     display: flex;
