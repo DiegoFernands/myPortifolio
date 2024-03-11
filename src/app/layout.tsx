@@ -9,7 +9,7 @@ import Tape from "@/components/Tape/tape";
 const poppins = Poppins({ subsets: ["latin"] , weight: ['100', '300', '400', '500','600', '700']});
 
 export const metadata: Metadata = {
-  title: "Dev | Diego Oliveira",
+  title: "Diego Oliveira | Dev",
   description: "Portfolio",
 };
 

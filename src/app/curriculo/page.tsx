@@ -5,6 +5,7 @@ import Experience from "@/components/Main/Curriculo/experience"
 import Skills from "@/components/Main/Curriculo/skills"
 import styled from "styled-components"
 
+
 interface CurriculoProps {
 
 }
@@ -89,7 +90,7 @@ export default function Curriculo(props : CurriculoProps){
                 </TagDiv>
                 <ContentLink>
                     <h3>Experiência</h3>
-                    <LinkActive href="#">Baixar cv</LinkActive>
+                    <LinkActive href="DiegoOliveira.pdf" download={"DiegoOliveira.pdf"}>Baixar cv</LinkActive>
                 </ContentLink>
             </Container>
             <Experience/>

@@ -113,8 +113,8 @@ export default function Content(props : ContentProps){
             <Text>
                 <p>
                     Sou um estudante de Análise e Desenvolvimeto de Sistemas,
-                    onde me encontrei na programação e adiquirindo habilidades em tecnologias.
-                    Além disso, explorei frameworks poderosos como Angular, React e Next.
+                    onde encontrei na programação habilidades em tecnologias e
+                    explorei frameworks como Angular, React e Next.
                 </p>
             </Text>
 
